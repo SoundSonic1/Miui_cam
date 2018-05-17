@@ -69,7 +69,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     MiuiCamera \
-    XiaomiParts
+    XiaomiParts \
+    WeatherProvider \
+    WundergroundWeatherProvider
 
 # Remove packages
 PRODUCT_PACKAGES += \
