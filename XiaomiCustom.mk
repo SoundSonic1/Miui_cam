@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-VENDOR_PATH := vendor/XiaomiCustom
+VENDOR_PATH := vendor/xiaomi/MiuiCamera
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(VENDOR_PATH)/overlay
