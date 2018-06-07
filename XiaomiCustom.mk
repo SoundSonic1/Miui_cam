@@ -14,9 +14,6 @@
 
 VENDOR_PATH := vendor/xiaomi/MiuiCamera
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(VENDOR_PATH)/overlay
-
 # SELinux
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
@@ -79,36 +76,9 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/vendor/etc/fonts.xml:system/vendor/etc/fonts.xml \
     $(VENDOR_PATH)/system/vendor/lib/libdualcameraddm.so:system/vendor/lib/libdualcameraddm.so
 
-# AptX
-PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
-    $(VENDOR_PATH)/system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so \
-    $(VENDOR_PATH)/system/vendor/lib/libaptXHD_encoder.so:system/vendor/lib/libaptXHD_encoder.so \
-    $(VENDOR_PATH)/system/vendor/lib/libaptX_encoder.so:system/vendor/lib/libaptX_encoder.so \
-    $(VENDOR_PATH)/system/vendor/lib64/libaptXHD_encoder.so:system/vendor/lib64/libaptXHD_encoder.so \
-    $(VENDOR_PATH)/system/vendor/lib64/libaptX_encoder.so:system/vendor/lib64/libaptX_encoder.so
-
-# Google Lens
-PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/pixelstyle/etc/sysconfig/pixel_2017_exclusive.xml:system/etc/sysconfig/pixel_2017_exclusive.xml \
-    $(VENDOR_PATH)/pixelstyle/etc/sysconfig/pixel_2017.xml:system/etc/sysconfig/pixel_2017.xml \
-    $(VENDOR_PATH)/pixelstyle/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
-    $(VENDOR_PATH)/pixelstyle/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml
-
 PRODUCT_PACKAGES += \
-    MiuiCamera \
-    XiaomiParts \
-    WeatherProvider \
-    WundergroundWeatherProvider
+    MiuiCamera
 
 # Camera permissions
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/MiuiCamera/miui.camera.permissions.xml:system/etc/permissions/miui.camera.permissions.xml
-
-# Remove packages
-PRODUCT_PACKAGES += \
-    Remove
-
-# Init
-PRODUCT_PACKAGES += \
-    init.xiaomi_custom.rc
