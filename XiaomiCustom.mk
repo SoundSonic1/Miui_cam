@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/MIUI_Time.ttf:system/etc/MIUI_Time.ttf \
     $(VENDOR_PATH)/system/etc/age_gender_bg:system/etc/age_gender_bg \
     $(VENDOR_PATH)/system/etc/crown_156_128.bin:system/etc/crown_156_128.bin \
-    $(VENDOR_PATH)/system/etc/dualcamera.png:system/etc/dualcamera.png \
     $(VENDOR_PATH)/system/etc/face_goodly_208_180:system/etc/face_goodly_208_180 \
     $(VENDOR_PATH)/system/etc/face_ravishing_238_224:system/etc/face_ravishing_238_224 \
     $(VENDOR_PATH)/system/etc/face_splendid_274_200:system/etc/face_splendid_274_200 \
