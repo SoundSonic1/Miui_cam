@@ -81,4 +81,5 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/MiuiCamera/miui.camera.permissions.xml:system/etc/permissions/miui.camera.permissions.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.eis.enable=1
+    persist.camera.eis.enable=1 \
+    camera.disable_shutter_sound.packagelist=com.android.camera
